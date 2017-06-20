@@ -1,0 +1,1882 @@
+body {
+     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	min-height: 98vh;  
+	background: linear-gradient(#00d2ff, #928DAB);
+	/* flexbox */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+     }
+
+header{
+    font-size: 62px;
+    font-family: cursive;
+    flex-grow: 1;
+}
+
+main {
+	#background-color: #dd5566;
+	/* flexbox */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex-grow: 1;
+	align-self: stretch;
+}
+
+#dateSearch{
+    margin: 10px;
+	padding: 10px;
+	#background-color: blue;
+        overflow: hidden;   /* let stepper disappear off end */
+	/* flexbox */
+	display: flex;
+	align-self: stretch; 
+    flex-grow: 1;
+}
+
+#date{
+    #background-color: lawngreen;
+    flex-grow: 2;
+    margin: inherit;
+    text-align: center;
+}
+
+#time{
+    font-size: 35px;
+    color: aliceblue;
+    font-family: sans-serif;
+    font-weight: 200;
+}
+
+#todayDate{
+    color: aliceblue;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 200;  
+    margin-top: -20px;
+}
+
+#search{
+   #background-color: goldenrod;
+    margin: inherit;
+    #border-width: 1px;
+	#border-color: black;
+	#border-style: solid;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+
+#search #zipbox{
+    height: 25px;
+    font-size: 15px;
+    border-radius: 15px;
+    border-color: none;
+    margin-top: 38px;
+    width: 170px;
+    font-weight: 100;
+    border-width: 0px;
+
+}
+
+#search button{
+    width: 65px;
+    color: white;
+    font-size: 12px;
+    background-color: deepskyblue;
+    font-weight: 800;
+    margin-top: 5px;
+    border-color: deepskyblue;
+    border-radius: 15px;
+    border-width: 0px;
+}
+
+
+#today{
+    margin: 10px;
+	padding: 10px;
+	#background-color: greenyellow;
+        overflow: hidden;   /* let stepper disappear off end */
+	/* flexbox */
+	display: flex;
+	align-self: stretch;
+    flex-grow: 1;
+}
+
+#picture{
+    height: 200px; 
+	width: 150px; 
+	#background-color: darkseagreen;
+	/* flexbox */
+	position: relative;  /* allow offsets from where flexbox put it */
+	/* horizontal position will be controlled by Javascript */
+    flex-grow: 1;
+    margin: inherit;
+    #border-width: 1px;
+	#border-color: black;
+	#border-style: solid;
+    
+}
+
+#pic{
+    #background-color: magenta;
+    height: 150px;
+    width: 200px;
+    margin: 0px 30px 0px 220px;
+    display: flex;
+}
+
+#todayIn{
+    height: 200px; 
+	width: 150px; 
+	#background-color: darkseagreen;
+	/* flexbox */
+	display: flex;
+	position: relative;  /* allow offsets from where flexbox put it */
+	/* horizontal position will be controlled by Javascript */
+    flex-grow: 1;
+    margin: inherit;
+    flex-direction: column;
+    #border-width: 1px;
+	#border-color: black;
+	#border-style: solid;
+    text-align: center;
+}
+
+#city{
+    font-size: 35px;
+    margin-top: 0px;
+    font-family: sans-serif;
+    font-weight: 100;
+    color: white;
+}
+
+#temp{
+    font-size: 80px;
+    margin-top: -15px;
+    font-family: sans-serif;
+    font-weight: 100;
+    color: white;
+}
+
+#condition{
+    margin-top: -80px;
+    font-family: sans-serif;
+    color: white;
+
+}
+
+#mph{
+    	height: 100px; 
+	width: 150px; 
+	#background-color: darkseagreen;
+	/* flexbox */
+	display: flex;
+	position: relative;  /* allow offsets from where flexbox put it */
+	/* horizontal position will be controlled by Javascript */
+    flex-grow: 1;
+    margin: inherit;
+    #border-width: 1px;
+	#border-color: black;
+	#border-style: solid;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+#humidity{
+    #background-color: aquamarine;
+    display: flex;
+    flex-grow: 1;
+}
+
+#drop{
+    margin:20px 0px 0px 12px;
+    color: white;
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+#winds{
+    #background-color: brown;
+    display: flex;
+    flex-grow: 1;
+}
+
+#winds p{
+    margin-top: 0px;
+}
+
+#winds img{
+    width: 35px;
+}
+#miles{
+    margin:0px 0px 0px 10px;
+    color: white;
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+#range {
+	margin: 10px;
+	padding: 10px;
+	#background-color: #6666ee;
+        overflow: hidden;   /* let stepper disappear off end */
+	/* flexbox */
+	display: flex;
+	flex-direction: row;
+	align-self: stretch; 
+    flex-grow: 1;/* fat as window! */
+}
+
+
+#stepper1 {
+	height: 250px; 
+	width: 150px; 
+	background-color: lightskyblue;
+	/* flexbox */
+	display: flex;
+	position: relative;  /* allow offsets from where flexbox put it */
+	/* horizontal position will be controlled by Javascript */
+    flex-grow: 1;
+    margin: inherit;
+    border-width: 1px;
+	border-color: lightskyblue;
+	border-style: solid;
+    border-radius: 20%;
+    overflow: hidden;
+    flex-direction: column;
+    overflow: hidden;
+
+}
+
+#day1{
+   #background-color: grey;
+    width: 100px;
+    height: 30px;
+    margin: 15px 75px 10px; 30px;
+    flex-direction: column; 
+    text-align: center;
+
+}
+
+#day1 p{
+    margin-top: 0px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 26px;
+}
+
+#forcast1{
+    #background-color: aquamarine;
+    width: 100px;
+    height: 90px;
+    margin: 3px 75px 10px; 30px;
+    text-align: center;
+}
+
+
+#cond1{
+    #background-color: blueviolet;
+    width: 100px;
+    height: 30px;
+    margin: 3px 75px 10px; 30px;
+    text-align: center;
+}
+
+#cond1 p{
+    margin-top: 0;
+    font-size: 15px;
+    color: white;
+}
+
+#temp1{
+    #background-color: blueviolet;
+    width: 160px;
+    height: 50px;
+    margin: 0px 45px 10px; 30px;
+}
+
+#temp1 #t1{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: 100;
+    margin-top: 0;
+    color: white;
+}
+
+#forcast1 img{
+    width: 90px;
+    height: 90px;
+}
+
+
+
+#stepper2 {
+	height: 250px; 
+	width: 150px; 
+	background-color: lightskyblue;
+	/* flexbox */
+	display: flex;
+	position: relative;  /* allow offsets from where flexbox put it */
+	/* horizontal position will be controlled by Javascript */
+    flex-grow: 1;
+    margin: inherit;
+    border-width: 1px;
+	border-color: lightskyblue;
+	border-style: solid;
+    border-radius: 20%;
+    flex-direction: column;
+    overflow: hidden;
+
+    
+}
+
+#day2{
+   # background-color: grey;
+    width: 100px;
+    height: 30px;
+    margin: 15px 75px 10px; 30px;
+    flex-direction: column; 
+    text-align: center;
+
+}
+
+#day2 p{
+    margin-top: 0px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 26px;
+}
+
+#forcast2{
+    #background-color: aquamarine;
+    width: 100px;
+    height: 90px;
+    margin: 3px 75px 10px; 30px;
+    text-align: center;
+}
+
+
+#cond2{
+    #background-color: blueviolet;
+    width: 100px;
+    height: 30px;
+    margin: 3px 75px 10px; 30px;
+    text-align: center;
+}
+
+#cond2 p{
+    margin-top: 0;
+    font-size: 15px;
+    color: white;
+}
+
+#temp2{
+    #background-color: blueviolet;
+    width: 160px;
+    height: 50px;
+    margin: 0px 45px 10px; 30px;
+}
+
+#temp2 #t1{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: 100;
+    margin-top: 0;
+    color: white;
+}
+
+#forcast2 img{
+    width: 90px;
+    height: 90px;
+}
+
+
+#stepper3 {
+	height: 250px; 
+	width: 150px;
+	background-color: lightskyblue;
+	/* flexbox */
+	display: flex;
+	position: relative;  /* allow offsets from where flexbox put it */
+	/* horizontal position will be controlled by Javascript */
+    flex-grow: 1;
+    margin: inherit;
+    border-width: 1px;
+	border-color: lightskyblue;
+	border-style: solid;
+    border-radius: 20%;
+    flex-direction: column;
+    overflow: hidden;
+
+
+}
+
+#day3{
+   # background-color: grey;
+    width: 100px;
+    height: 30px;
+    margin: 15px 75px 10px; 30px;
+    flex-direction: column; 
+    text-align: center;
+
+}
+
+#day3 p{
+    margin-top: 0px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 26px;
+}
+
+#forcast3{
+    #background-color: aquamarine;
+    width: 100px;
+    height: 90px;
+    margin: 3px 75px 10px; 30px;
+    text-align: center;
+}
+
+
+#cond3{
+    #background-color: blueviolet;
+    width: 100px;
+    height: 30px;
+    margin: 3px 75px 10px; 30px;
+    text-align: center;
+}
+
+#cond3 p{
+    margin-top: 0;
+    font-size: 15px;
+    color: white;
+}
+
+#temp3{
+    #background-color: blueviolet;
+    width: 160px;
+    height: 50px;
+    margin: 0px 45px 10px; 30px;
+}
+
+#temp3 #t1{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: 100;
+    margin-top: 0;
+    color: white;
+}
+
+#forcast3 img{
+    width: 90px;
+    height: 90px;
+}
+
+
+#stepper4 {
+	height: 250px; 
+	width: 150px; 
+	background-color: lightskyblue;
+	/* flexbox */
+	display: flex;
+	position: relative;  /* allow offsets from where flexbox put it */
+	/* horizontal position will be controlled by Javascript */
+    flex-grow: 1;
+    margin: inherit;
+    border-width: 1px;
+	border-color: lightskyblue;
+	border-style: solid;
+    border-radius: 20%;
+    flex-direction: column;
+    overflow: hidden;
+
+}
+
+#day4{
+   # background-color: grey;
+    width: 100px;
+    height: 30px;
+    margin: 15px 75px 10px; 30px;
+    flex-direction: column; 
+    text-align: center;
+
+}
+
+#day4 p{
+    margin-top: 0px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 26px;
+}
+
+#forcast4{
+    #background-color: aquamarine;
+    width: 100px;
+    height: 90px;
+    margin: 3px 75px 10px; 30px;
+    text-align: center;
+}
+
+
+#cond4{
+    #background-color: blueviolet;
+    width: 100px;
+    height: 30px;
+    margin: 3px 75px 10px; 30px;
+    text-align: center;
+}
+
+#cond4 p{
+    margin-top: 0;
+    font-size: 15px;
+    color: white;
+}
+
+#temp4{
+    #background-color: blueviolet;
+    width: 160px;
+    height: 50px;
+    margin: 0px 45px 10px; 30px;
+}
+
+#temp4 #t1{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: 100;
+    margin-top: 0;
+    color: white;
+}
+
+#forcast4 img{
+    width: 90px;
+    height: 90px;
+}
+
+#stepper5 {
+	height: 250px; 
+	width: 150px; 
+	background-color: lightskyblue;
+	/* flexbox */
+	display: flex;
+	position: relative;  /* allow offsets from where flexbox put it */
+	/* horizontal position will be controlled by Javascript */
+    flex-grow: 1;
+    margin: inherit;
+    border-width: 1px;
+	border-color: lightskyblue;
+	border-style: solid;
+    border-radius: 20%;
+    flex-direction: column;
+    overflow: hidden;
+
+}
+
+#day5{
+   # background-color: grey;
+    width: 100px;
+    height: 30px;
+    margin: 15px 75px 10px; 30px;
+    flex-direction: column; 
+    text-align: center;
+
+}
+
+#day5 p{
+    margin-top: 0px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 26px;
+}
+
+#forcast5{
+    #background-color: aquamarine;
+    width: 100px;
+    height: 90px;
+    margin: 3px 75px 10px; 30px;
+    text-align: center;
+}
+
+
+#cond5{
+    #background-color: blueviolet;
+    width: 100px;
+    height: 30px;
+    margin: 3px 75px 10px; 30px;
+    text-align: center;
+}
+
+#cond5 p{
+    margin-top: 0;
+    font-size: 15px;
+    color: white;
+}
+
+#temp5{
+    #background-color: blueviolet;
+    width: 160px;
+    height: 50px;
+    margin: 0px 45px 10px; 30px;
+}
+
+#temp5 #t1{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: 100;
+    margin-top: 0;
+    color: white;
+}
+
+#forcast5 img{
+    width: 90px;
+    height: 90px;
+}
+
+#stepper6 {
+	height: 250px; 
+	width: 150px; 
+	background-color: lightskyblue;
+	/* flexbox */
+	display: flex;
+	position: relative;  /* allow offsets from where flexbox put it */
+	/* horizontal position will be controlled by Javascript */
+    flex-grow: 1;
+    display: none;
+    margin: inherit;
+    border-width: 1px;
+	border-color: lightskyblue;
+	border-style: solid;
+    border-radius: 20%;
+    flex-direction: column;
+    overflow: hidden;
+
+}
+#day6{
+   # background-color: grey;
+    width: 100px;
+    height: 30px;
+    margin: 15px 75px 10px; 30px;
+    flex-direction: column; 
+    text-align: center;
+
+}
+
+#day6 p{
+    margin-top: 0px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 26px;
+}
+
+#forcast6{
+    #background-color: aquamarine;
+    width: 100px;
+    height: 90px;
+    margin: 3px 75px 10px; 30px;
+    text-align: center;
+}
+
+
+#cond6{
+    #background-color: blueviolet;
+    width: 100px;
+    height: 30px;
+    margin: 3px 75px 10px; 30px;
+    text-align: center;
+}
+
+#cond6 p{
+    margin-top: 0;
+    font-size: 15px;
+    color: white;
+}
+
+#temp6{
+    #background-color: blueviolet;
+    width: 160px;
+    height: 50px;
+    margin: 0px 45px 10px; 30px;
+}
+
+#temp6 #t1{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: 100;
+    margin-top: 0;
+    color: white;
+}
+
+#forcast6 img{
+    width: 90px;
+    height: 90px;
+}
+
+
+#stepper7 {
+	height: 250px; 
+	width: 150px; 
+	background-color: lightskyblue;
+	/* flexbox */
+	display: flex;
+	position: relative;  /* allow offsets from where flexbox put it */
+	/* horizontal position will be controlled by Javascript */
+    flex-grow: 1;
+    display: none;
+    margin: inherit;
+    border-width: 1px;
+	border-color: lightskyblue;
+	border-style: solid;
+    border-radius: 20%;
+    flex-direction: column;
+    overflow: hidden;
+
+}
+
+#day7{
+   # background-color: grey;
+    width: 100px;
+    height: 30px;
+    margin: 15px 75px 10px; 30px;
+    flex-direction: column; 
+    text-align: center;
+
+}
+
+#day7 p{
+    margin-top: 0px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 26px;
+}
+
+#forcast7{
+    #background-color: aquamarine;
+    width: 100px;
+    height: 90px;
+    margin: 3px 75px 10px; 30px;
+    text-align: center;
+}
+
+
+#cond7{
+    #background-color: blueviolet;
+    width: 100px;
+    height: 30px;
+    margin: 3px 75px 10px; 30px;
+    text-align: center;
+}
+
+#cond7 p{
+    margin-top: 0;
+    font-size: 15px;
+    color: white;
+}
+
+#temp7{
+    #background-color: blueviolet;
+    width: 160px;
+    height: 50px;
+    margin: 0px 45px 10px; 30px;
+}
+
+#temp7 #t1{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: 100;
+    margin-top: 0;
+    color: white;
+}
+
+#forcast7 img{
+    width: 90px;
+    height: 90px;
+}
+
+#stepper8 {
+	height: 250px; 
+	width: 150px; 
+	background-color: lightskyblue;
+	/* flexbox */
+	display: flex;
+	position: relative;  /* allow offsets from where flexbox put it */
+	/* horizontal position will be controlled by Javascript */
+    flex-grow: 1;
+    display: none;
+    margin: inherit;
+    border-width: 1px;
+	border-color: lightskyblue;
+	border-style: solid;
+    border-radius: 20%;
+    flex-direction: column;
+    overflow: hidden;
+
+}
+
+#day8{
+   # background-color: grey;
+    width: 100px;
+    height: 30px;
+    margin: 15px 75px 10px; 30px;
+    flex-direction: column; 
+    text-align: center;
+
+}
+
+#day8 p{
+    margin-top: 0px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 26px;
+}
+
+#forcast8{
+    #background-color: aquamarine;
+    width: 100px;
+    height: 90px;
+    margin: 3px 75px 10px; 30px;
+    text-align: center;
+}
+
+
+#cond8{
+    #background-color: blueviolet;
+    width: 100px;
+    height: 30px;
+    margin: 3px 75px 10px; 30px;
+    text-align: center;
+}
+
+#cond8 p{
+    margin-top: 0;
+    font-size: 15px;
+    color: white;
+}
+
+#temp8{
+    #background-color: blueviolet;
+    width: 160px;
+    height: 50px;
+    margin: 0px 45px 10px; 30px;
+}
+
+#temp8 #t1{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: 100;
+    margin-top: 0;
+    color: white;
+}
+
+#forcast8 img{
+    width: 90px;
+    height: 90px;
+}
+
+
+#stepper9 {
+	height: 250px; 
+	width: 150px; 
+	background-color: lightskyblue;
+	/* flexbox */
+	display: flex;
+	position: relative;  /* allow offsets from where flexbox put it */
+	/* horizontal position will be controlled by Javascript */
+    flex-grow: 1;
+    display: none;
+    margin: inherit;
+    border-width: 1px;
+	border-color: lightskyblue;
+	border-style: solid;
+    border-radius: 20%;
+    flex-direction: column;
+        overflow: hidden;
+
+}
+
+#day9{
+   # background-color: grey;
+    width: 100px;
+    height: 30px;
+    margin: 15px 75px 10px; 30px;
+    flex-direction: column; 
+    text-align: center;
+
+}
+
+#day9 p{
+    margin-top: 0px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 26px;
+}
+
+#forcast9{
+    #background-color: aquamarine;
+    width: 100px;
+    height: 90px;
+    margin: 3px 75px 10px; 30px;
+    text-align: center;
+}
+
+
+#cond9{
+    #background-color: blueviolet;
+    width: 100px;
+    height: 30px;
+    margin: 3px 75px 10px; 30px;
+    text-align: center;
+}
+
+#cond9 p{
+    margin-top: 0;
+    font-size: 15px;
+    color: white;
+}
+
+#temp9{
+    #background-color: blueviolet;
+    width: 160px;
+    height: 50px;
+    margin: 0px 45px 10px; 30px;
+}
+
+#temp9 #t1{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: 100;
+    margin-top: 0;
+    color: white;
+}
+
+#forcast9 img{
+    width: 90px;
+    height: 90px;
+}
+
+#stepper10 {
+	height: 250px; 
+	width: 150px; 
+	background-color: lightskyblue;
+	/* flexbox */
+	position: relative;  /* allow offsets from where flexbox put it */
+	/* horizontal position will be controlled by Javascript */
+    flex-grow: 1;
+    display: none;
+    margin: inherit;
+    border-width: 1px;
+	border-color: lightskyblue;
+	border-style: solid;
+    border-radius: 20%;
+    flex-direction: column;
+    overflow: hidden;
+    
+}
+
+#day10{
+   # background-color: grey;
+    width: 100px;
+    height: 30px;
+    margin: 15px 75px 10px; 30px;
+    flex-direction: column; 
+    text-align: center;
+
+}
+
+#day10 p{
+    margin-top: 0px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 26px;
+}
+
+#forcast10{
+    #background-color: aquamarine;
+    width: 100px;
+    height: 90px;
+    margin: 3px 75px 10px; 30px;
+    text-align: center;
+}
+
+
+#cond10{
+    #background-color: blueviolet;
+    width: 100px;
+    height: 30px;
+    margin: 3px 75px 10px; 30px;
+    text-align: center;
+}
+
+#cond10 p{
+    margin-top: 0;
+    font-size: 15px;
+    color: white;
+}
+
+#temp10{
+    #background-color: blueviolet;
+    width: 160px;
+    height: 50px;
+    margin: 0px 45px 10px; 30px;
+}
+
+#temp10 #t1{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: 100;
+    margin-top: 0;
+    color: white;
+}
+
+#forcast10 img{
+    width: 90px;
+    height: 90px;
+}
+
+
+footer{
+    #background-color: bisque;
+    display: flex;
+    overflow: hidden;
+    margin: 10px;
+	padding: 10px;
+	align-self: stretch;
+    margin-top: 0px;
+}
+
+#clicker0 {
+	
+	#background-color: #6666ee;
+	position: relative; 
+    flex-grow: 1;
+    #border-width: 1px;
+	#border-color: black;
+	#border-style: solid;
+    
+    
+}
+
+#clicker0 button{
+    width: 30px;
+    height: 30px;
+    border-radius: 60%;
+    background-color: deepskyblue;
+    border-width: 1px;
+	border-color: deepskyblue;
+	border-style: solid;
+    border-radius: 15px;
+    font-size: 20px;
+    color: white;
+
+    
+}
+
+#clicker {
+	
+	#background-color: #6666ee;
+	/* flexbox */
+	position: relative;  /* allow offsets from where flexbox put it */
+	/* horizontal position will be controlled by Javascript */
+    flex-direction: row;
+    #border-width: 1px;
+	#border-color: black;
+	#border-style: solid;
+    flex-grow: 1;
+   
+}
+
+#clicker button{
+    width: 30px;
+    height: 30px;
+    border-radius: 60%;
+    background-color: deepskyblue;
+    border-width: 1px;
+	border-color: deepskyblue;
+	border-style: solid;
+    border-radius: 15px;
+    font-size: 20px;
+    color: white;
+}
+
+#clicker p{
+    float: right;
+    font-size: 25px;
+    margin-top: 0px;
+    font-family: sans-serif;
+    font-weight: 100;
+    color: white;
+}
+
+#clicker0 p{
+    font-size: 25px;
+    margin-top: 0px;
+    font-family: sans-serif;
+    font-weight: 100;
+    color: white;
+    
+}
+
+#img{
+    width: 200px;
+    height: 200px;
+}
+
+#pf{
+    display: none;
+}
+#pf:hover{cursor: pointer;}
+#mf{
+    display: none;
+}
+#mf:hover{cursor: pointer;}
+#clicker0 button:hover{cursor: pointer;}
+#clicker button:hover{cursor: pointer;}
+
+@media (max-width: 480px){
+    #dateSearch{
+        display: flex;
+        flex-direction: column-reverse;
+        #background-color: aquamarine;
+    }
+    #time{
+        font-size: 30px;
+        text-align: justify;
+        margin-top: -10px;
+        #background-color: aqua;
+       }
+    
+    #todayDate{
+        display: none;
+    }
+    #picture{display: none;}
+    #mph{display: none;}
+    #temp{display: none;}
+    #condition{display: none;}
+    #today{
+        margin-top: -10px; 
+        #background-color: bisque;
+        height: 70px;
+    }
+    
+    #range{
+        #background-color: beige;
+        height: 300px;
+        margin-top: 0px;
+        flex-wrap: wrap;
+        display: flex;
+    }
+    #stepper1{
+        height: 300px;
+        margin-top: 0px;
+        display: flex;
+        width: 40%;
+    }
+    #day1{
+    #background-color: grey;
+    width: 100px;
+    height: 30px;
+    margin: 15px 75px 10px 110px;
+    flex-direction: column; 
+    text-align: center;
+
+}
+
+#day1 p{
+    margin-top: 0px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 26px;
+}
+
+#forcast1{
+    #background-color: aquamarine;
+    width: 130px;
+    height: 100px;
+    margin: 3px 75px 10px 90px;
+    text-align: center;
+}
+
+
+#cond1{
+    #background-color: blueviolet;
+    width: 100px;
+    height: 30px;
+    margin: 3px 75px 10px 110px;
+    text-align: center;
+}
+
+#cond1 p{
+    margin-top: 0;
+    font-size: 15px;
+    color: white;
+}
+
+#temp1{
+    #background-color: blueviolet;
+    width: 160px;
+    height: 50px;
+    margin: 0px 45px 10px 80px;
+}
+
+#temp1 #t1{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: 100;
+    margin-top: 0;
+    color: white;
+}
+
+#forcast1 img{
+    width: 90px;
+    height: 90px;
+}
+
+   #stepper2{
+        height: 300px;
+        margin-top: 0px;
+        display: none;
+    }
+    #day2{
+    #background-color: grey;
+    width: 100px;
+    height: 30px;
+    margin: 15px 75px 10px 110px;
+    flex-direction: column; 
+    text-align: center;
+
+}
+
+#day2 p{
+    margin-top: 0px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 26px;
+}
+
+#forcast2{
+    #background-color: aquamarine;
+    width: 130px;
+    height: 100px;
+    margin: 3px 75px 10px 90px;
+    text-align: center;
+}
+
+
+#cond2{
+    #background-color: blueviolet;
+    width: 100px;
+    height: 30px;
+    margin: 3px 75px 10px 110px;
+    text-align: center;
+}
+
+#cond2 p{
+    margin-top: 0;
+    font-size: 15px;
+    color: white;
+}
+
+#temp2{
+    #background-color: blueviolet;
+    width: 160px;
+    height: 50px;
+    margin: 0px 45px 10px 80px;
+}
+
+#temp2 #t1{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: 100;
+    margin-top: 0;
+    color: white;
+}
+
+#forcast2 img{
+    width: 90px;
+    height: 90px;
+}
+       #stepper3{
+        height: 300px;
+        margin-top: 0px;
+        display: none;
+    }
+    #day3{
+    #background-color: grey;
+    width: 100px;
+    height: 30px;
+    margin: 15px 75px 10px 110px;
+    flex-direction: column; 
+    text-align: center;
+
+}
+
+#day3 p{
+    margin-top: 0px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 26px;
+}
+
+#forcast3{
+    #background-color: aquamarine;
+    width: 130px;
+    height: 100px;
+    margin: 3px 75px 10px 90px;
+    text-align: center;
+}
+
+
+#cond3{
+    #background-color: blueviolet;
+    width: 100px;
+    height: 30px;
+    margin: 3px 75px 10px 110px;
+    text-align: center;
+}
+
+#cond3 p{
+    margin-top: 0;
+    font-size: 15px;
+    color: white;
+}
+
+#temp3{
+    #background-color: blueviolet;
+    width: 160px;
+    height: 50px;
+    margin: 0px 45px 10px 80px;
+}
+
+#temp3 #t1{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: 100;
+    margin-top: 0;
+    color: white;
+}
+
+#forcast3 img{
+    width: 90px;
+    height: 90px;
+}
+       #stepper4{
+        height: 300px;
+        margin-top: 0px;
+        display: none;
+    }
+    #day4{
+    #background-color: grey;
+    width: 100px;
+    height: 30px;
+    margin: 15px 75px 10px 110px;
+    flex-direction: column; 
+    text-align: center;
+
+}
+
+#day4 p{
+    margin-top: 0px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 26px;
+}
+
+#forcast4{
+    #background-color: aquamarine;
+    width: 130px;
+    height: 100px;
+    margin: 3px 75px 10px 90px;
+    text-align: center;
+}
+
+
+#cond4{
+    #background-color: blueviolet;
+    width: 100px;
+    height: 30px;
+    margin: 3px 75px 10px 110px;
+    text-align: center;
+}
+
+#cond4 p{
+    margin-top: 0;
+    font-size: 15px;
+    color: white;
+}
+
+#temp4{
+    #background-color: blueviolet;
+    width: 160px;
+    height: 50px;
+    margin: 0px 45px 10px 80px;
+}
+
+#temp4 #t1{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: 100;
+    margin-top: 0;
+    color: white;
+}
+
+#forcast4 img{
+    width: 90px;
+    height: 90px;
+}
+    
+       #stepper5{
+        height: 300px;
+        margin-top: 0px;
+        display: none;
+    }
+    #day5{
+    #background-color: grey;
+    width: 100px;
+    height: 30px;
+    margin: 15px 75px 10px 110px;
+    flex-direction: column; 
+    text-align: center;
+
+}
+
+#day5 p{
+    margin-top: 0px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 26px;
+}
+
+#forcast5{
+    #background-color: aquamarine;
+    width: 130px;
+    height: 100px;
+    margin: 3px 75px 10px 90px;
+    text-align: center;
+}
+
+
+#cond5{
+    #background-color: blueviolet;
+    width: 100px;
+    height: 30px;
+    margin: 3px 75px 10px 110px;
+    text-align: center;
+}
+
+#cond5 p{
+    margin-top: 0;
+    font-size: 15px;
+    color: white;
+}
+
+#temp5{
+    #background-color: blueviolet;
+    width: 160px;
+    height: 50px;
+    margin: 0px 45px 10px 80px;
+}
+
+#temp5 #t1{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: 100;
+    margin-top: 0;
+    color: white;
+}
+
+#forcast5 img{
+    width: 90px;
+    height: 90px;
+}
+    
+       #stepper6{
+        height: 300px;
+        margin-top: 0px;
+        display: none;
+    }
+    #day6{
+    #background-color: grey;
+    width: 100px;
+    height: 30px;
+    margin: 15px 75px 10px 110px;
+    flex-direction: column; 
+    text-align: center;
+
+}
+
+#day6 p{
+    margin-top: 0px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 26px;
+}
+
+#forcast6{
+    #background-color: aquamarine;
+    width: 130px;
+    height: 100px;
+    margin: 3px 75px 10px 90px;
+    text-align: center;
+}
+
+
+#cond6{
+    #background-color: blueviolet;
+    width: 100px;
+    height: 30px;
+    margin: 3px 75px 10px 110px;
+    text-align: center;
+}
+
+#cond6 p{
+    margin-top: 0;
+    font-size: 15px;
+    color: white;
+}
+
+#temp6{
+    #background-color: blueviolet;
+    width: 160px;
+    height: 50px;
+    margin: 0px 45px 10px 80px;
+}
+
+#temp6 #t1{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: 100;
+    margin-top: 0;
+    color: white;
+}
+
+#forcast6 img{
+    width: 90px;
+    height: 90px;
+}
+    
+       #stepper7{
+        height: 300px;
+        margin-top: 0px;
+        display: none;
+    }
+    #day7{
+    #background-color: grey;
+    width: 100px;
+    height: 30px;
+    margin: 15px 75px 10px 110px;
+    flex-direction: column; 
+    text-align: center;
+
+}
+
+#day7 p{
+    margin-top: 0px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 26px;
+}
+
+#forcast7{
+    #background-color: aquamarine;
+    width: 130px;
+    height: 100px;
+    margin: 3px 75px 10px 90px;
+    text-align: center;
+}
+
+
+#cond7{
+    #background-color: blueviolet;
+    width: 100px;
+    height: 30px;
+    margin: 3px 75px 10px 110px;
+    text-align: center;
+}
+
+#cond7 p{
+    margin-top: 0;
+    font-size: 15px;
+    color: white;
+}
+
+#temp7{
+    #background-color: blueviolet;
+    width: 160px;
+    height: 50px;
+    margin: 0px 45px 10px 80px;
+}
+
+#temp7 #t1{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: 100;
+    margin-top: 0;
+    color: white;
+}
+
+#forcast7 img{
+    width: 90px;
+    height: 90px;
+}
+    
+       #stepper8{
+        height: 300px;
+        margin-top: 0px;
+        display: none;
+    }
+    #day8{
+    #background-color: grey;
+    width: 100px;
+    height: 30px;
+    margin: 15px 75px 10px 110px;
+    flex-direction: column; 
+    text-align: center;
+
+}
+
+#day8 p{
+    margin-top: 0px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 26px;
+}
+
+#forcast8{
+    #background-color: aquamarine;
+    width: 130px;
+    height: 100px;
+    margin: 3px 75px 10px 90px;
+    text-align: center;
+}
+
+
+#cond8{
+    #background-color: blueviolet;
+    width: 100px;
+    height: 30px;
+    margin: 3px 75px 10px 110px;
+    text-align: center;
+}
+
+#cond8 p{
+    margin-top: 0;
+    font-size: 15px;
+    color: white;
+}
+
+#temp8{
+    #background-color: blueviolet;
+    width: 160px;
+    height: 50px;
+    margin: 0px 45px 10px 80px;
+}
+
+#temp8 #t1{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: 100;
+    margin-top: 0;
+    color: white;
+}
+
+#forcast8 img{
+    width: 90px;
+    height: 90px;
+}
+    
+       #stepper9{
+        height: 300px;
+        margin-top: 0px;
+        display: none;
+    }
+    #day9{
+    #background-color: grey;
+    width: 100px;
+    height: 30px;
+    margin: 15px 75px 10px 110px;
+    flex-direction: column; 
+    text-align: center;
+
+}
+
+#day9 p{
+    margin-top: 0px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 26px;
+}
+
+#forcast9{
+    #background-color: aquamarine;
+    width: 130px;
+    height: 100px;
+    margin: 3px 75px 10px 90px;
+    text-align: center;
+}
+
+
+#cond9{
+    #background-color: blueviolet;
+    width: 100px;
+    height: 30px;
+    margin: 3px 75px 10px 110px;
+    text-align: center;
+}
+
+#cond9 p{
+    margin-top: 0;
+    font-size: 15px;
+    color: white;
+}
+
+#temp9{
+    #background-color: blueviolet;
+    width: 160px;
+    height: 50px;
+    margin: 0px 45px 10px 80px;
+}
+
+#temp9 #t1{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: 100;
+    margin-top: 0;
+    color: white;
+}
+
+#forcast9 img{
+    width: 90px;
+    height: 90px;
+}
+    
+       #stepper10{
+        height: 300px;
+        margin-top: 0px;
+        display: none;
+    }
+    #day10{
+    #background-color: grey;
+    width: 100px;
+    height: 30px;
+    margin: 15px 75px 10px 110px;
+    flex-direction: column; 
+    text-align: center;
+
+}
+
+#day10 p{
+    margin-top: 0px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 26px;
+}
+
+#forcast10{
+    #background-color: aquamarine;
+    width: 130px;
+    height: 100px;
+    margin: 3px 75px 10px 90px;
+    text-align: center;
+}
+
+
+#cond10{
+    #background-color: blueviolet;
+    width: 100px;
+    height: 30px;
+    margin: 3px 75px 10px 110px;
+    text-align: center;
+}
+
+#cond10 p{
+    margin-top: 0;
+    font-size: 15px;
+    color: white;
+}
+
+#temp10{
+    #background-color: blueviolet;
+    width: 160px;
+    height: 50px;
+    margin: 0px 45px 10px 80px;
+}
+
+#temp10 #t1{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: 100;
+    margin-top: 0;
+    color: white;
+}
+
+#forcast10 img{
+    width: 90px;
+    height: 90px;
+}
+    
+    #mf{
+        display: flex;
+        width: 60px;
+    }
+    #mf button{
+        width: 60px;
+    }
+    
+    #pf{
+        display: flex;
+    }
+    #pf button{
+        width: 90px;
+    }
+    #A0{
+        display: none;
+    }
+    #A1{
+        display: none;
+    }
+    
+}

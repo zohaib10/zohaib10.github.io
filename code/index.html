@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width = device-width">
+        <title>Weather App</title>
+        <link rel="stylesheet" href="weather.css">
+    </head>
+    <body>
+       <header id = "location"><b></b></header>
+        <main>
+           
+           <div id = "dateSearch">
+               <div id="date">
+                   <p id= "time">Today 2:15pm</p>
+                   <p id = "todayDate"><b id="thisDate">April 21, 2017</b></p>
+               </div>
+               
+               <div id="search">
+                    <input id="zipbox" type="text" placeholder="zipcode or place name">
+                    <button onclick="gotNewPlace()">submit</button>              
+                </div>
+           </div>
+           
+           
+           <div id="today">
+               <div id="picture">
+                   <div id="pic">
+                       <img id = "img" src="sunny.png" alt="">
+                   </div>
+               </div>
+               
+               <div id="todayIn">
+                   <p id="city">Berkeley, CA</p>
+                   <p id="temp">76&#176;</p>
+                   <p id = "condition">partly sunny</p>
+               </div>
+               
+               <div id="mph">
+                   <div id="humidity">
+                       <p><img src="../WeatherApp/drop.png" alt=""><p id = "drop">73%</p></p>
+                   </div>
+                   <div id="winds">
+                       <p><img src="../WeatherApp/wind.png" alt=""><p id = "miles">3mph</p></p>
+                   </div>
+               </div>
+           </div>
+           
+            <div id="range">
+                
+                <div id="stepper1">
+                    
+                       
+                       <div id="day1">
+                            <p>Day</p>
+                        </div>
+                     
+                         <div id="forcast1">
+                            <img id = "image1"  src="sunny.png" alt="">
+                        </div>
+                    
+                       <div id="cond1">
+                            <p>partly sunny</p>
+                        </div>
+                    
+                        <div id="temp1">
+                             <p id="t1"><b>73&#176;   -   50&#176;</b></p>
+                        </div>
+                    
+                </div>
+                
+                <div id="stepper2">
+                     <div id="day2">
+                            <p>Day</p>
+                        </div>
+                     
+                         <div id="forcast2">
+                            <img id = "image2" src="cloudy.png" alt="">
+                        </div>
+                    
+                       <div id="cond2">
+                            <p>partly sunny</p>
+                        </div>
+                    
+                        <div id="temp2">
+                             <p id="t2"><b>73&#176;   -   50&#176;</b></p>
+                        </div>
+                    
+                </div>
+                
+                <div id="stepper3">
+                     <div id="day3">
+                            <p>Day</p>
+                        </div>
+                     
+                         <div id="forcast3">
+                            <img id = "image3" src="sunny-snow.png" alt="">
+                        </div>
+                    
+                       <div id="cond3">
+                            <p>partly sunny</p>
+                        </div>
+                    
+                        <div id="temp3">
+                             <p id="t3"><b>73&#176;   -   50&#176;</b></p>
+                        </div>
+                    
+                </div>
+                
+                <div id="stepper4">
+                     <div id="day4">
+                            <p>Day</p>
+                        </div>
+                     
+                         <div id="forcast4">
+                            <img id = "image4" src="rain.png" alt="">
+                        </div>
+                    
+                       <div id="cond4">
+                            <p>partly sunny</p>
+                        </div>
+                    
+                        <div id="temp4">
+                             <p id="t4"><b>73&#176;   -   50&#176;</b></p>
+                        </div>
+                    
+                </div>
+                
+                <div id="stepper5">
+                     <div id="day5">
+                            <p>Day</p>
+                        </div>
+                     
+                         <div id="forcast5">
+                            <img id = "image5" src="rain-snow.png" alt="">
+                        </div>
+                    
+                       <div id="cond5">
+                            <p>partly sunny</p>
+                        </div>
+                    
+                        <div id="temp5">
+                             <p id="t5"><b>73&#176;   -   50&#176;</b></p>
+                        </div>
+                    
+                </div>
+                
+                <div id="stepper6">
+                     <div id="day6">
+                            <p>Day</p>
+                        </div>
+                     
+                         <div id="forcast6">
+                            <img id = "image6" src="sunny.png" alt="">
+                        </div>
+                    
+                       <div id="cond6">
+                            <p>partly sunny</p>
+                        </div>
+                    
+                        <div id="temp6">
+                             <p id="t6"><b>73&#176;   -   50&#176;</b></p>
+                        </div>
+                    
+                </div>
+                
+                <div id="stepper7">
+                     <div id="day7">
+                            <p>Day</p>
+                        </div>
+                     
+                         <div id="forcast7">
+                            <img id = "image7" src="sunny-snow.png" alt="">
+                        </div>
+                    
+                       <div id="cond7">
+                            <p>partly sunny</p>
+                        </div>
+                    
+                        <div id="temp7">
+                             <p id="t7"><b>73&#176;   -   50&#176;</b></p>
+                        </div>
+                    
+                </div>
+                
+                <div id="stepper8">
+                     <div id="day8">
+                            <p>Day</p>
+                        </div>
+                     
+                         <div id="forcast8">
+                            <img id = "image8" src="rain.png" alt="">
+                        </div>
+                    
+                       <div id="cond8">
+                            <p>partly sunny</p>
+                        </div>
+                    
+                        <div id="temp8">
+                             <p id="t8"><b>73&#176;   -   50&#176;</b></p>
+                        </div>
+                    
+                </div>
+                
+                <div id="stepper9">
+                     <div id="day9">
+                            <p>Day</p>
+                        </div>
+                     
+                         <div id="forcast9">
+                            <img id = "image9" src="cloudy.png" alt="">
+                        </div>
+                    
+                       <div id="cond9">
+                            <p>partly sunny</p>
+                        </div>
+                    
+                        <div id="temp9">
+                             <p id="t9"><b>73&#176;   -   50&#176;</b></p>
+                        </div>
+                    
+                </div>
+                
+                <div id="stepper10">
+                     <div id="day10">
+                            <p>Day</p>
+                        </div>
+                     
+                         <div id="forcast10">
+                            <img id = "image10" src="sunny.png" alt="">
+                        </div>
+                    
+                       <div id="cond10">
+                            <p>partly sunny</p>
+                        </div>
+                    
+                        <div id="temp10">
+                             <p id="t10"><b>73&#176;   -   50&#176;</b></p>
+                        </div>
+                    
+                </div>
+                
+            </div>
+            
+        </main>
+        
+        <footer>
+                   <div id="clicker0">
+                       
+                       <p id="A0"><button onclick="buttonAction0()">&#10094;</button> previous forecasts</p>
+                       <p id = "pf"><button onclick="buttonAP()">previous</button></p>
+                    </div>
+                    
+                    <div id="clicker">
+                      <p id="A1">more forecasts  <button onclick="buttonAction()">&#10095;</button></p>
+                       <p id = "mf"><button onclick="buttonAM()">next</button></p>
+                    </div>
+        </footer>
+        <script src="weather.js"></script>
+        
+        <script id="script" src="https://query.yahooapis.com/v1/public/yql?q=select * from weather.forecast where woeid in (select woeid from geo.places(1) where text='davis, ca')&amp;format=json&amp;callback=callbackFunction"></script>
+        
+        
+        </body>
+    
+                    
+    
+    
+    
+</html>
